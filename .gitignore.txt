@@ -1,0 +1,104 @@
+# -------------------------------
+# Unreal Engine Git Ignore
+# -------------------------------
+
+# Build artifacts
+Binaries/
+Build/
+
+# Project user settings
+Saved/
+Intermediate/
+DerivedDataCache/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.vcxproj
+*.vcxproj.*
+.vscode/
+.vs/
+*.sln.DotSettings.user
+
+# Cache & temporary files
+*.pdb
+*.ipdb
+*.iobj
+*.log
+*.tlog
+*.tmp
+*.cache
+*_log.txt
+
+# Platform-specific output
+WindowsNoEditor/
+LinuxNoEditor/
+Android/
+iOS/
+HTML5/
+
+# Generated Config
+Config/DefaultEditor.ini
+Config/DefaultEditorUserSettings.ini
+
+# UnrealBuildTool and AutoSDKs
+Engine/Build/BatchFiles/
+Engine/Intermediate/
+Engine/Saved/
+Engine/DerivedDataCache/
+Engine/Extras/VisualStudioDebugging/
+Engine/Extras/VisualStudioIntegration/
+
+# Plugins (Generated)
+Plugins/*/Intermediate/
+Plugins/*/Binaries/
+Plugins/*/Saved/
+
+# Ignore backup files
+*_backup_*.log
+*.bak
+
+# Ignore build receipts
+*.target
+*.modules
+*.manifest
+*.ubt
+*.uprojectdirs
+*.upluginmanifest
+*.upluginmodules
+
+# Ignore DDC
+DerivedDataCache/
+Engine/DerivedDataCache/
+Project/DerivedDataCache/
+
+# Ignore OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------------
+# AirSim & External Dependencies
+# -------------------------------
+
+# AirSim generated build artifacts
+DroneSim/Plugins/AirSim/Binaries/
+DroneSim/Plugins/AirSim/Intermediate/
+DroneSim/Plugins/AirSim/Saved/
+DroneSim/Plugins/AirSim/DerivedDataCache/
+
+# Large rpc/msgpack generated files (already safe to keep via include)
+**/deps/rpclib/build/
+**/deps/rpclib/bin/
+**/deps/rpclib/lib/
+
+# -------------------------------
+# Ignore Project-Specific Folders
+# (Your project name: DroneSim)
+# -------------------------------
+
+DroneSim/Saved/
+DroneSim/Intermediate/
+DroneSim/DerivedDataCache/
+DroneSim/Binaries/
+DroneSim/.vs/
